@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homework</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background: rgb(255, 134, 113);
+            min-height: 70vh;
+            border-bottom-left-radius: 100px;
+
+
+
+        }
+        nav-link dropdown-toggle a{
+            color: white;
+
+        }
+        nav-link dropdown-toggle a:hover{
+            color: red;
+
+        }
+        .all-header{
+
+        }
+        .header .space {
+            margin-left: 130px;
+
+        }
+        .header h2 {
+            color: white;
+        }
+        .header .header-list {
+            display: flex;
+
+
+        }
+        .header .header-list ul {
+            display: flex;
+            list-style: none;
+            margin-top: 25px;
+        }
+        .header .header-list ul li {
+            padding: 0px 18px;
+        }
+        .header .header-list a{
+            text-decoration: none;
+            color: white;
+            transition: 0.5s ease;
+        }
+        .header .header-list ul li a:hover{
+            color: rgba(255, 0, 0, 0.534);
+        }
+        .header .btn  {
+            margin-left: 40%;
+            margin-top: ;
+        }
+        .header .btn button{
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            background: transparent;
+
+        }
+        .header .btn button[type="submit"]{
+            background: white;
+            color: rgb(255, 134, 113);
+        }
+        .header .header-word {
+            color: white;
+            text-align: center;
+            font-weight: 100;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 90px;
+
+
+        }
+        .header .header-word h1 {
+            font-size: 40px;
+
+        }
+        .header .header-word button {
+            width: 150px;
+            height: 45px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            background: transparent;
+            border: 1px solid white;
+            margin-top: 60px;
+            cursor: pointer;
+            transition: 1s ease;
+
+
+        }
+
+        .header .header-word button:hover{
+            background: white;
+            color: rgb(255, 134, 113) ;
+        }
+        .header .header-word button[type="submit"]{
+            background: white;
+            color: rgb(255, 134, 113);
+        }
+        .header .header-word button[type="submit"]:hover{
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .about-us {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 150px;
+            color: darkblue;
+            margin-top: 100px;
+
+        }
+        .about-block {
+            display: block;
+
+        }
+        .header-about h2{
+            text-align: center;
+            color: rgb(45, 59, 87);
+            margin-top: 100px;
+            font-size: 20px;
+        }
+        .about-block{
+            width: 400px;
+        }
+        .about1 h2{
+            color: rgb(45, 59, 87);
+            text-align: center;
+            font-size: 25px;
+        }
+        .about2 h2{
+            color: rgb(45, 59, 87);
+            text-align: center;
+            font-size: 25px;
+        }
+        .about1{
+            color: black;
+            transition: 0.4s ease-in-out;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .about1:hover{
+
+            border-left: 2px solid rgba(255, 0, 0, 0.459);
+            border-right: 2px solid rgba(255, 0, 0, 0.466);
+
+        }
+        .about2 {
+            color: black;
+            transition: 0.4s ease;
+            font-size: 14px;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .about2:hover{
+            border-left: 2px solid rgba(255, 0, 0, 0.527);
+            border-right: 2px solid rgba(255, 0, 0, 0.507);
+        }
+        .about-us .about-img{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            width: 500px;
+            height: 350px;
+        }
+
+/* darkblue box */
+.darkblue-box{
+            background:  rgb(71, 71, 95);
+            width: 500px;
+            height: 250px;
+            border-bottom-left-radius: 20px;
+            margin-top: 100px;
+            display: flex;
+
+        }
+        /* 2box inside another */
+        .box11{
+            background: white;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            margin-left: 60px;
+            top: 730px;
+        }
+        /* circle inside box11 */
+        .circle11 {
+            background: rgb(71, 71, 95);
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .box22{
+            background: white;
+            width: 250px;
+            height: 270px;
+            position: absolute;
+            margin-left: 230px;
+            top: 730px;
+        }
+        .circle {
+            background: gray;
+            position: absolute;
+            border-radius: 100%;
+            margin-left: 600px;
+            width: 500px;
+            height: 500px;
+            margin-top: -55px;
+        }
+        .phone {
+            background: rgb(71, 71, 95);
+            height: 190px;
+            display: flex;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            margin-top: 100px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .phone img {
+            margin-left: 100px;
+        }
+        .phone .img img {
+            border-radius: 14px;
+        }
+        .phone .img1 img {
+            margin-top: -25px;
+            border-radius: 14px;
+        }
+        .phone .img2 img{
+            margin-top: 25px;
+            border-radius: 14px;
+            margin-left: 10px;
+
+        }
+        .content-phone{
+            width: 500px;
+            margin-left: 30%;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        .content-phone h1{
+            font-size: 28px;
+
+        }
+        /* DESIGN COMPUTER */
+        .comp {
+            display: flex;
+            margin-top: 200px;
+        }
+        .comp .cm1 {
+
+            width: 400px;
+            height: 250px;
+            border: 10px solid black;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+
+            background: white;
+            margin-left: 90px;
+
+        }
+        .comp .lin1{
+            width: 550px;
+            height: 15px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            margin-left: 20px;
+            background:  rgb(45, 59, 87);
+
+        }
+        .all-comp{
+            display: block;
+            margin-top: 10px;
+        }
+        .comp .word-comp{
+            width: 500px;
+            margin-left: 700px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 150px;
+            position: absolute;
+
+        }
+        .footer{
+            background: rgb(71, 71, 95);
+            height: 300px;
+            margin-top: 200px;
+            border-top-right-radius: 70px;
+            display: flex;
+
+            justify-content: space-around;
+        }
+        .footer h4 {
+            color: white;
+
+        }
+        .footer .logo2 h1{
+            color: white;
+            margin-top: 20px;
+        }
+        .footer ul {
+
+            list-style: none;
+        }
+        .footer ul li a{
+            color: rgba(255, 255, 255, 0.582);
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.4s ease-in-out;
+        }
+        .footer ul li a:hover{
+            color: whitesmoke;
+            font-size: 15px;
+        }
+        .t-list ul{
+            list-style: none;
+        }
+        .ck {
+
+        height:300px;
+        width: 300px;
+        border-radius: 100%;
+        margin-top: -430px;
+        position: absolute;
+        }
+
+        .back-comp img {
+            margin-left: -200px ;
+            width: 700px;
+            height: 590px;
+        }
+        .image-aboutt{
+            position: absolute;
+            margin-top: -300px;
+            margin-left: 200px;
+        }
+        /* PHONE VIEW */
+        @media (max-width: 380px) {
+            .header .header-word h1 {
+            font-size: 30px;
+        }
+        .header .space .header-list ul {
+            display: none;
+        }
+        .btn {
+            display: none;
+        }
+        .header .space .header-list h2{
+            margin-left: -100px;
+            font-size: 40px;
+
+
+        }
+        /* FOOTER PHONE VIEW */
+        .footer {
+            display: block;
+            height: 100%;
+        }
+        .footer ul {
+            margin-left: 130px;
+        }
+        .footer .logo2{
+            margin-left: 145px;
+
+        }
+        .footer h1 {
+            font-size: 40px;
+        }
+        .f-list{
+            margin-top: 60px;
+        }
+        .footer h4{
+            font-size: 20px;
+            margin-left: 160px;
+        }
+        /* SECOND PART PHONE VIEW */
+.about-us {
+    display: block;
+}
+.about-us .about-img img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: -50px;
+}
+.about-us .about-block {
+    margin-top: 300px;
+    margin-left: -100px;
+    height: 300px;
+    width: 300px;
+
+}
+.phone .img1 img {
+            margin-top: -25px;
+            border-radius: 14px;
+        }
+        .phone{
+            margin-top: -40px;
+        }
+        .phone .img2 img{
+            margin-top: 25px;
+            border-radius: 14px;
+            margin-left: 10px;
+
+        }
+        .phone img {
+            margin-left: 10px;
+        }
+        .content-phone{
+            width: 250px;
+            margin-left: 10%;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        .content-phone h1{
+            font-size: 18px;
+            color: gray;
+
+        }
+        .back-comp {
+            display: block;
+        }
+        .back-comp img {
+            margin-left: 30px;
+
+            width: 300px;
+            height: 290px;
+        }
+        .computer {
+            margin-top: -50px;
+        }
+        .comp .word-comp{
+            margin-left: 50px;
+            margin-top: 350px;
+            width: 250px;
+        }
+        .comp .word-comp h2{
+            font-size: 25px;
+        }
+        .footer {
+            margin-top: 550px;
+        }
+        .header{
+            background: rgb(255, 134, 113);
+            min-height: 50vh;
+            border-bottom-left-radius: 100px;
+
+
+
+        }
+        .phone {
+            height: 100vh;
+
+
+        }
+        .phone .img1 {
+            margin-top: -70px;
+            margin-left: 50px;
+        }
+        .phone .img2 {
+            margin-top: -70px;
+        }
+
+        .content-phone {
+            margin-top: 300px;
+            margin-left: -180px;
+        }
+        }
+        @media (max-width: 540px) {
+            .header .header-word h1 {
+            font-size: 30px;
+        }
+        .header{
+            background: rgb(255, 134, 113);
+            min-height: 100vh;
+            border-bottom-left-radius: 100px;
+        }
+        .header .space .header-list ul {
+            display: none;
+        }
+        .btn {
+            display: none;
+        }
+        .header .space .header-list h2{
+            margin-left: -100px;
+            font-size: 40px;
+
+
+        }
+        /* FOOTER PHONE VIEW */
+        .footer {
+            display: block;
+            height: 100%;
+        }
+        .footer ul {
+            margin-left: 130px;
+        }
+        .footer .logo2{
+            margin-left: 145px;
+
+        }
+        .footer h1 {
+            font-size: 40px;
+        }
+        .f-list{
+            margin-top: 60px;
+        }
+        .footer h4{
+            font-size: 20px;
+            margin-left: 160px;
+        }
+        /* SECOND PART PHONE VIEW */
+.about-us {
+    display: block;
+}
+.about-us .about-img img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: -50px;
+}
+.about-us .about-block {
+    margin-top: 300px;
+    margin-left: -100px;
+    height: 300px;
+    width: 300px;
+
+}
+.phone .img1 img {
+            margin-top: -25px;
+            border-radius: 14px;
+        }
+        .phone{
+            margin-top: -40px;
+        }
+        .phone .img2 img{
+            margin-top: 25px;
+            border-radius: 14px;
+            margin-left: 10px;
+
+        }
+        .phone img {
+            margin-left: 10px;
+        }
+        .content-phone{
+            width: 250px;
+            margin-left: 10%;
+            color: white;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+        .content-phone h1{
+            font-size: 18px;
+            color: gray;
+
+        }
+        .back-comp {
+            display: block;
+        }
+        .back-comp img {
+            margin-left: 30px;
+
+            width: 300px;
+            height: 290px;
+        }
+        .computer {
+            margin-top: -50px;
+        }
+        .comp .word-comp{
+            margin-left: 50px;
+            margin-top: 350px;
+            width: 250px;
+        }
+        .comp .word-comp h2{
+            font-size: 25px;
+        }
+        .footer {
+            margin-top: 550px;
+        }
+        .header{
+            background: rgb(255, 134, 113);
+            min-height: 100vh;
+            border-bottom-left-radius: 100px;
+
+
+
+        }
+        .phone {
+            height: 100vh;
+
+
+        }
+        .phone .img1 {
+            margin-top: -70px;
+            margin-left: 50px;
+        }
+        .phone .img2 {
+            margin-top: -70px;
+        }
+
+        .content-phone {
+            margin-top: 200px;
+            margin-left: -180px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <section class="header">
+        <div class="space">
+
+
+    <div class="header-list">
+        <h2>Blogr</h2>
+
+        <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Company</a></li>
+            <li><a href="">Connect</a></li>
+        </ul>
+        </ul>
+
+        <div class="btn">
+            <button>Login</button>
+            <button  type="submit">Sign up</button>
+        </div></div>
+    </div>
+       <nav class="all-header">
+    <div class="header-word">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <button type="submit">Start for free</button>
+        <button> Learn more</button>
+
+    </nav>
+    </div>
+
+</section>
+<!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" rgb(255, 134, 113)" fill-opacity=1" d="M0,96L60,133.3C120,171,240,245,360,256C480,267,600,213,720,192C840,171,960,181,1080,202.7C1200,224,1320,256,1380,272L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
+<div class="header-about">
+<h2>DESIGNED FOR FUTURE</h2>
+</div>
+
+<div class="about-us">
+
+    <div class="about-block">
+    <div class="about1">
+        <h2>Introducing an extensible editor</h2>
+        <p>Blog features an exceedingly intuitive interface which let you focus an one thing
+            Blog features an exceedingly intuitive interface which let you focus an one thing
+        </p>
+    </div>
+    <div class="about2">
+        <h2>Robust content management</h2>
+        <p>Blog features an exceedingly intuitive interface which let you focus an one thing
+            Blog features an exceedingly intuitive interface which let you focus an one thing
+        </p>
+    </div></div>
+
+
+    <!-- DESIGNED IMAGE FOR SECOND PART -->
+
+
+    <section class="about-img">
+        <img src="wallpaper.PNG" alt="">
+
+        <!-- DARK BLUE BOX IN FIRST BOX -->
+        <!-- <div class="darkblue-box">
+            <div class="box11">
+                <div class="circle11"></div>
+            </div>
+            <div class="box22"></div>
+        </div> -->
+        <!-- 2 box inside another -->
+        <!-- <div class="image-aboutt">
+            <img src="line.png" alt="" width="310px" height="400px">
+        </div> -->
+
+    </section>
+    <!-- DESIGNED PHONE BLOG -->
+</div>
+<div class="phone">
+    <div class="img1">
+        <img src="phonea.png" alt="" >
+
+    </div>
+    <div class="img2">
+        <img src="phoneb.png" alt="" >
+    </div>
+    <div class="content-phone">
+        <h1>State of art infrastructure</h1>
+        <p>Blog features an exceedingly intuitive interface which let you focus an one thing
+            Blog features an exceedingly intuitive interface which let you focus an one thing</p>
+    </div>
+</div>
+<!-- DESIGN COMPUTER -->
+<div class="comp">
+    <div class="back-comp">
+        <div class="computer">
+    <img src="laptop.PNG" alt="" ></div>
+    <!-- <section class="all-comp">
+
+    <div class="ck">
+
+    <div class="cm1">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(255, 134, 113)" fill-opacity="1" d="M0,64L0,192L360,192L360,160L720,160L720,96L1080,96L1080,256L1440,256L1440,0L1080,0L1080,0L720,0L720,0L360,0L360,0L0,0L0,0Z"></path></svg>
+    </div>
+    <div class="lin1">
+    </div>
+    </div></section> -->
+    </div>
+
+    <div class="word-comp">
+        <div class="first-w">
+            <h2>Free, Open, Simple</h2>
+            <p>Blog features an exceedingly intuitive interface which let you focus an one thing
+                Blog features an exceedingly intuitive interface which let you focus an one thing</p>
+        </div>
+        <div class="second-w">
+            <h2>Powerful tooling</h2>
+            <p>Blog features an exceedingly intuitive interface which let you focus an one thing
+                Blog features an exceedingly intuitive interface which let you focus an one thing</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="logo2"><h1>Blogr</h1></div>
+    <div class="f-list">
+        <h4>Product</h4>
+        <ul>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">features</a></li>
+            <li><a href="">Intergration</a></li>
+        </ul>
+    </div>
+    <div class="s-list">
+        <h4>Company</h4>
+        <ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Team</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Corners</a></li>
+        </ul>
+    </div>
+    <div class="t-list">
+        <h4>Connect</h4>
+        <ul>
+    <li><a href="#">Contact</a></li>
+<li><a href="#">NewsLetter</a></li>
+<li><a href="#">Linkedin</a></li>
+
+        </ul>
+    </div>
+ </div>
+
+
+</body>
+</html>
