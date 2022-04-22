@@ -7,20 +7,30 @@
     <title>Profile card</title>
     <style>
         form{
+            font-family: 'Poppins';
             margin-left: 500px;
             height: 504px;
             width: 320px;
-            box-shadow: 2px 4px 8px  orangered;
+            box-shadow: 1px 1px 8px  orangered;
+            font-size: 14px;
         }
         a img:hover{
             background-color: #4e4e4eb0;
             border-radius: 8px;
         }
-        h3[class="btn"]{
-            width: 310px; height: 30px; color: white; text-align: center; padding: 5px; background-color: black;
+        button[class="btn"]{
+            width: 320px; 
+            height: 40px;
+            margin-top:12px;
+            color: white; 
+            text-align: center;
+            padding: 5px; 
+            background-color: black;
+            border: none;
         }
-        h3[class="btn"]:hover{
+        button[class="btn"]:hover{
             background-color: #0c0b0bea;
+            color: rgba(255, 255, 255, 0.788);
         }
     </style>
 </head>
@@ -32,11 +42,11 @@
         <h1>ERIC Bikorimana</h1>
         <h3>Trainee</h3>
         <h5>Netbrain</h5>
-        <a href="https://www.instagram.com/"><img src="instagram.png" alt=""></a>
-        <a href="https://twitter.com/"><img src="twitter.png" alt=""></a>
-        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt=""></a>
-        <a href="https://www.facebook.com/"><img src="facebook.png" alt=""></a>
-        <h3 class="btn">Connect</h3>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt=""></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt=""></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt=""></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt=""></a>
+        <button class="btn">Connect</button>
     </section>
 </form>
 </body>
