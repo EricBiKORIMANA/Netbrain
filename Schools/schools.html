@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School list|WideSchool</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="schools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <h2><a href="index.html"><i class="fas fa-assistive-listening-systems"></i>WideSchool</a></h2>
+        </div>
+        <div class="items">
+            <h4>Main menu</h4>
+            <li><i class="fas fa-chart-pie"></i><a href="index.html">Dashboard</a></li>
+            <li class="dropdown__btn"><i class="fas fa-school"></i><a href="#"><button>Schools</Button></a><i class="fas fa-angle-down"></i></li>
+                <div class="dropdown__menu hide">
+                    <a href="schools.html"><i class="fas fa-list"></i>&nbsp;&nbsp;&nbsp;School list</a>
+                    <a href="schooladd.html"><i class="fas fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;School add</a>
+                    <a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;School edit</a>
+                </div>
+            <li><i class="fas fa-building"></i><a href="department.html"><button>Departments</Button></a></li>
+            <li><i class="fas fa-message"></i><a href="#">InBox</a></li>
+        </div>
+
+        
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile">
+            <i class="far fa-bell"></i>
+            <li class="drpdwn">
+                <div class="nav">
+                    <ul>
+                        <li style="list-style: none;"><i class="fas fa-user"></i></a>
+                        <ul>
+                        <li><a href="#">Profile<br><small>Administator</small></a></li>
+                        <li><a href="inbox.html"><i class="fas fa-message" style="font-size: 15px;"></i>Inbox</a></li>
+                        <li><a href="form.html"><i class="fab fa-sign-out-alt" style="font-size: 15px;"></i>Sign out</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </li>
+        </div>
+        
+        </div>
+        
+        <h3 class="i-name">
+            Home Schools in Rwanda
+        </h3>
+
+        <div class="content">
+            <h4><i class="fas fa-level"></i>Select by Level</h4>
+        </div>
+        <div class="boxes">
+       <a href="#"><div class="box">
+           <div class="icon">
+            <i class="fa-solid fa-baby"></i>
+            
+           </div>
+           <div class="value">
+               <h3 class="1">Pre-nursery</h3>
+               <span style=" border-radius: 10px; width: 50%;">30</span>
+           </div>
+           
+       </div></a>
+
+       <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fa-solid fa-children"></i>
+        </div>
+        <div class="value">
+            <h3>Nursery</h3>
+            <span style=" border-radius: 10px; width: 50%;">102</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fa-solid fa-school-flag"></i>
+        </div>
+        <div class="value">
+            <h3>Primary</h3>
+            <span style=" border-radius: 10px; width: 50%;">342</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-school"></i>
+        </div>
+        <div class="value">
+            <h3>Secondary</h3>
+            <span style=" border-radius: 10px; width: 50%;">402</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <div class="value">
+            <h3>TVET</h3>
+            <span style=" border-radius: 10px; width: 50%;">155</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-wheelchair"></i>
+        </div>
+        <div class="value">
+            <h3>Special need</h3>
+            <span style=" border-radius: 10px; width: 50%;">5</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-language"></i>
+        </div>
+        <div class="value">
+            <h3>Language</h3>
+            <span style=" border-radius: 10px; width: 50%;">30</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="value">
+            <h3>Universities</h3>
+            <span style=" border-radius: 10px; width: 50%;">50</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="value">
+            <h3>Masters</h3>
+            <span style=" border-radius: 10px; width: 50%;">30</span>
+        </div>
+        
+    </div></a>
+
+    <a href="#"><div class="box">
+        <div class="icon">
+            <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="value">
+            <h3>PHD</h3>
+            <span style=" border-radius: 10px; width: 50%;">10</span>
+        </div>
+        
+    </div></a>
+
+   </div>
+   <div class="board">
+       <table width="100%">
+           <thead>
+               <tr>
+                   <td>ID</td>
+                   <td>School name</td>
+                   <td>School Manager</td>
+                   <td>School District</td>
+                   <td>School Gender</td>
+                   <td>School Level</td>
+                   <td>No of Students</td>
+                   <td>Action</td>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td class="id">
+                       <h5>01</h5>
+                   </td>
+                   <td class="sn">
+                       <h5>GSNDP Cyanika</h5>
+                   </td>
+                   <td class="snm">
+                       <h5>Father Claude</h5>
+                   </td>
+                   <td class="sd">
+                       <h5>Nyamagabe</h5>
+                   </td>
+                   <td class="sg">
+                       <h5>Mixed</h5>
+                   </td>
+                   <td class="sl">
+                       <h6>TVET</h6>
+                       <h6>Secondary</h6>
+                   </td>
+                   <td class="ns">
+                       <h5>690</h5>
+                   </td>
+                   <td class="edit">
+                       <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                   </td>
+               </tr>
+               <tr>
+                <td class="id">
+                    <h5>02</h5>
+                </td>
+                <td class="sn">
+                    <h5>LYCÉE DE KIGALI</h5>
+                </td>
+                <td class="snm">
+                    <h5>Steven</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyarugenge</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>Secondary</h5>
+                </td>
+                <td class="ns">
+                    <h5>990</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>03</h5>
+                </td>
+                <td class="sn">
+                    <h5>LYCÉE NOTRE-DAME DE CÎTEAUX</h5>
+                </td>
+                <td class="snm">
+                    <h5>Nun Maria</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyarugenge</h5>
+                </td>
+                <td class="sg">
+                    <h5>Single</h5>
+                </td>
+                <td class="sl">
+                    <h5>Secondary</h5>
+                </td>
+                <td class="ns">
+                    <h5>403</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>04</h5>
+                </td>
+                <td class="sn">
+                    <h5>RWANDA CODING ACADEMY</h5>
+                </td>
+                <td class="snm">
+                    <h5>Serge</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyabihu</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>TVET</h5>
+                </td>
+                <td class="ns">
+                    <h5>378</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>05</h5>
+                </td>
+                <td class="sn">
+                    <h5>COLLÈGE CHRIST ROI NYANZA</h5>
+                </td>
+                <td class="snm">
+                    <h5>Eric</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyanza</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>Secondary</h5>
+                </td>
+                <td class="ns">
+                    <h5>878</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>06</h5>
+                </td>
+                <td class="sn">
+                    <h5>EAV KIVUMU</h5>
+                </td>
+                <td class="snm">
+                    <h5>Manzi</h5>
+                </td>
+                <td class="sd">
+                    <h5>Ngororero</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>TVET</h5>
+                </td>
+                <td class="ns">
+                    <h5>464</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>07</h5>
+                </td>
+                <td class="sn">
+                    <h5>E.S BYIMANA</h5>
+                </td>
+                <td class="snm">
+                    <h5>Roick</h5>
+                </td>
+                <td class="sd">
+                    <h5>Ruhango</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>Secondary</h5>
+                </td>
+                <td class="ns">
+                    <h5>897</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>08</h5>
+                </td>
+                <td class="sn">
+                    <h5>GS RAMBURA FILLES</h5>
+                </td>
+                <td class="snm">
+                    <h5>Serge</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyabihu</h5>
+                </td>
+                <td class="sg">
+                    <h5>Single</h5>
+                </td>
+                <td class="sl">
+                    <h6>TVET</h6>
+                    <h6>Secondary</h6>
+                </td>
+                <td class="ns">
+                    <h5>678</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>09</h5>
+                </td>
+                <td class="sn">
+                    <h5>GSO BUTARE</h5>
+                </td>
+                <td class="snm">
+                    <h5>Muyoboke</h5>
+                </td>
+                <td class="sd">
+                    <h5>Huye</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>Secondary</h5>
+                </td>
+                <td class="ns">
+                    <h5>390</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>10</h5>
+                </td>
+                <td class="sn">
+                    <h5>University of Kigali</h5>
+                </td>
+                <td class="snm">
+                    <h5>Bruce</h5>
+                </td>
+                <td class="sd">
+                    <h5>Gasabo</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h5>University</h5>
+                </td>
+                <td class="ns">
+                    <h5>1378</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr>
+            <tr>
+                <td class="id">
+                    <h5>11</h5>
+                </td>
+                <td class="sn">
+                    <h5> G.S. BIGUGU</h5>
+                </td>
+                <td class="snm">
+                    <h5>Rosine</h5>
+                </td>
+                <td class="sd">
+                    <h5>Nyaruguru</h5>
+                </td>
+                <td class="sg">
+                    <h5>Mixed</h5>
+                </td>
+                <td class="sl">
+                    <h6>Primary</h6>
+                    <h6>Secondary</h6>
+                </td>
+                <td class="ns">
+                    <h5>978</h5>
+                </td>
+                <td class="edit">
+                    <h4><a href="schooledit.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit</a></h4>
+                </td>
+            </tr
+           </tbody>
+       </table>
+   </div>
+
+   <footer>
+    <h3>Copyright &#169; 2022 Eric B.</h3>
+</footer>
+    </section>
+
+<script>
+    $('#menu-btn').click(function(){
+        $('#menu').toggleClass("active");
+    })
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
